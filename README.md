@@ -16,5 +16,7 @@ The purpose of this project is to create machine learning models for predicting 
    c. train_global_model.py: Trains a global model for reference by other files.<br>
    d. predict_first_pitch_global.py: Uses the trained global model to predict the result of a new first pitch with user submitted variables.<br>
    e. evaluate_game.py: Evaluates the trained global model on all first pitches in a certain game.<br>
+# Usage
+
 # Author
 Robert Brydon, for inquiries or suggestions please contact via LinkedIn: <a href="https://www.linkedin.com/in/robert-brydon-phd-0241b5186/">Visit Robert's LinkedIn</a>
