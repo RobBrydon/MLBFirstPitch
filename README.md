@@ -1,6 +1,6 @@
 # MLB First Pitch
-# Purpose
-The purpose of this project is to create machine learning models for predicting the result of the first pitch of MLB at-bats. The models will categorize the results of the first pitch into either "strike", "ball", or "hit into play" in multiclass models or "strike/ball" or "hit into play" for two-class models.
+# Overview
+The purpose of this project is to create machine learning models for predicting the result of the first pitch of Major Leage Baseball (MLB) at-bats. The models will categorize the results of the first pitch into either "strike", "ball", or "hit into play" in multiclass models or "strike/ball" or "hit into play" for two-class models. The project utilizes MLB Statcast data accessed via the "pybaseball" python package. The Statcast data includes many features for the location and result of the pitch that could be used to improve performance of the model, but inclusion of these feature would make the models reflective rather than predictive. The goal is to develop a reliable tool that could predict first pitch results based off only features that could be known prior to the start of an at-bat, primarily focusing on game situation and pitcher tendencies. This could be used to set batter or fielder expectations or be employed in gambling markets that allow for the prediction of first pitch results. 
 # Content
 1. Two-Class Models
    a. First_Pitch_Single_Batter.ipynb: Trains decision tree, random forest, artificial neural network, XGBoost, LightGBM, and CatBoost models on data for a single batter. Applies the models to a set of validation data withheld from the train/test portion of the code to prevent leakage.
