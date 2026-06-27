@@ -19,6 +19,6 @@ The purpose of this project is to create machine learning models for predicting 
 # Usage
 For each of the single- and multi-batter models, the training and validation date ranges must be specified as a global variable. In addition, a decay rate must be specified with the default value set to 0.04, which sets data from 6 months earlier as half weight. In the single-batter models, the batter's name is also set as a global variable. Following loading and caching of the Statcast data, build_context_features.py should be run locally on the cached parquet file (example: "python build_context_features.py statcast_YYYYMMDD_YYYYMMDD.parquet"). Prior to running predict_first_pitch_global.py and evaluate_game.py, the train_global_model.py must be ran with a specified date range in the file. The evaluate_game.py file needs to have a date and teams specified in the file as well.
 # Results
-
+The global CatBoost model provided the best results in terms of F1 score for predicting first pitches hit into play.
 # Author
 Robert Brydon, for inquiries or suggestions please contact via LinkedIn: <a href="https://www.linkedin.com/in/robert-brydon-phd-0241b5186/">Visit Robert's LinkedIn</a>
